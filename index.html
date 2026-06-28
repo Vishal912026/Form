@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET & POST Requests</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>GET Request Form</h3>
+    <form method="get" action ="http://localhost:8080/register">
+        <input placeholder="enter usrename" name="user" type="text" />
+        <input placeholder="enter password" name="password" type="password" />
+        <button>Submit</button>   
+          </form>
+          <hr/>
+          <h3>POST Request Form</h3>
+    <form method="post" action ="http://localhost:8080/register">
+        <input placeholder="enter usrename" name="user" type="text" />
+        <input placeholder="enter password" name="password" type="password" />
+        <button>Submit</button> 
+        </form>
+        <form action="/register" method="POST">
+  
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    </div>
+
+  
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+
+    
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+
+    <div>
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+    </div>
+
+    <button type="submit">Register</button>
+</form>
+</body>
+</html>
